@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MATERI HTML DASAR</title>
+</head>
+
+<body>
+  <!-- atribut global
+  acceskey 
+  class 
+  id 
+  dir  
+  lang 
+  style
+  tabindex
+  title  -->
+
+
+  <!-- ini headinng -->
+  <h1>Bapak pucung</h1>
+  <h2>Bapak pucung</h2>
+  <h3>Bapak pucung</h3>
+  <h4>Bapak pucung</h4>
+  <h5>Bapak pucung</h5>
+  <h6>Bapak pucung</h6>
+  <hr>
+
+  <!-- ini paragraf -->
+  <p>ini paragraf</p>
+
+  <!-- biasanya di web memakai
+  <h1>h1 sebagai judul</h1>
+  <p>paragrafnya</p>
+  <h2>h2 sebagai subjudul</h2>
+  <p>dan pargrafnya</p> -->
+  <hr>
+
+  <!-- penggunaan <br> dan <hr>
+    boleh diletakkan di awal, akhir, tengah kalimat dalam tag maupun diluar tag-->
+
+  <p>ini adalah penggunaan <br>br=baris baru</p>
+  <!-- penggunaan <hr> otomatis membuat baris baru saat didalam tag, saat di save 
+    akan membelah seperti code dibawah -->
+  <p>penggunaan hr=garis
+    <hr>horizontal
+  </p>
+
+
+  <!-- penggunaan tag <b>BOLD</b>, <i>ITALIC</i>, <u>UNDERLINE</u> -->
+  <p><b>ini adalah</b> <i>penggunaan tag</i> <u>biu</u></p>
+
+  <!-- penggunaan tag <strong>bold</strong> dan <em>italic</em> -->
+  <p><em>halo saya fiantyo galih</em> <strong>ingin bertemu kamuu!!!</strong></p>
+
+  <!-- ini adalah penggunaan <ol>ordered list</ol>, <ul>unordered list</ul>, 
+      <li>list</li>, dan <dl>definition list</dl> 
+    - <dt>definiton term</dt> <<- satu pasang di dalam <dl></dl> >> <dd>definition description</dd> -->
+
+  <h3>urutan yang urut list nya</h3>
+  <ol type="i">
+    <!-- (ctrl+space untuk melihat) -->
+    <li>bapak pucung</li>
+    <li>dandanggula</li>
+    <li>sinom</li>
+  </ol>
+
+  <h3>urutan yang tidak urut list nya</h3>
+  <ul type="circle">
+    <!-- type nya bisa berupa circle, disc, dan square (ctrl+space untuk melihat) -->
+    <li>halo</li>
+    <li>disini saya</li>
+    <li>lagi baca</li>
+    <li>buku hehe</li>
+  </ul>
+
+  <h3>definition list sebagai desc dari sebuah artikel</h3>
+  <dl>
+    <dt>sakura</dt>
+    <dd>adalah sebuah bunga bewarna sakura/pink</dd>
+    <dt>lavender</dt>
+    <dd>adalah sebuah bunga bewarna ungu</dd>
+  </dl>
+  <hr>
+
+  <!-- ini adalah penggunaan anchor <a>, hyperlink <a href="sumber">klik untuk info lebih lanjut</a> -->
+  <!-- target="_blank" ialah perintah untuk menampilkan web di page baru -->
+  <!-- perintah target="" memiliki 4 macam : _self, _blank, _parent, _top -->
+  <!-- fungsi _self adalah membuka sumber pada page yg sama -->
+  <!-- fungsi _blank adalah membuka sumber pada page baru -->
+  <!-- untuk _parent dan _top masuk framework -->
+  <a href="fiantyogalihp.wordpress.com" target="_blank">subcribe web di web saya!!</a>
+  <br>
+  <a href="/html/admin/admin.html" target="_blank">pelajari lebih lanjut!</a>
+  <hr>
+
+
+  <!-- ini adalah penggunaan img : src, title, alt, height, dan width -->
+  <!-- perintah alt untuk menampilkan desc gambar saat gambar tidak loaded dengan baik -->
+  <img src="img/tasabu.jpeg" alt="tas abu abu" title="tasnya mba yeti" width="200px">
+  <hr>
+  <img src="https://fiantyogalihp.files.wordpress.com/2021/07/cropped-62-852-5831-6179-20191206_174619.jpg"
+    alt="logon fiyuu" title="logo fiyuu nih boss" width="30%">
+  <hr>
+
+  <!-- penggunaan gambar yang berisi link -->
+  <p>pencet gambar dibawah untuk keterangan lebih lanjut</p>
+  <a href="fiantyogalihp.wordpress.com">
+    <img src="https://fiantyogalihp.files.wordpress.com/2021/07/cropped-62-852-5831-6179-20191206_174619.jpg"
+      title="website fiyuu" width="100px" height="100px">
+  </a>
+  <hr>
+
+  <!-- penggunaan <table>tabel</table> -->
+  <!-- atributnya ada border, cellpadding, cellspace, rowspan, dan colspan -->
+  <table border="10" cellpadding="10" cellspace="0">
+    <tr>
+      <th>no</th>
+      <th>gambar</th>
+      <th>nama</th>
+      <th>aksi</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td><img src="img/coklat1.jpg" width="60"></td>
+      <td>coklat</td>
+      <td>
+        <a href="detail.php?id=1">lihat detail</a>
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><img src="img/download.jpg" width="60"></td>
+      <td>download</td>
+      <td>
+        <a href="detail.php?id=2">lihat detail</a>
+      </td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><img src="img/img123.jpg" width="60"></td>
+      <td>img123</td>
+      <td>
+        <a href="detail.php?id=3">lihat detail</a>
+      </td>
+    </tr>
+  </table>
+
+  <table border="10" cellpadding="10" cellspace="0">
+    <tr>
+      <td>11</td>
+      <td>12</td>
+      <td>13</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td colspan="2" rowspan="2">?</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>42</td>
+      <td>43</td>
+      <td>44</td>
+    </tr>
+  </table>
+</body>
+
+</html>
