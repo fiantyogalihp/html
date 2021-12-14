@@ -1,0 +1,32 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+li {
+  font-style: none;
+}
+
+header {
+  font-family: 'Gill Sans';
+  background-color: aquamarine;
+}
+
+main {
+  background-color: aqua;
+}
+
+.header-logo {
+  float: left;
+  color: #fff;
+  padding: 20px 40px;
+}
+
+.header-list li {
+  float: left;
+  color: #fff;
+  padding: 33px 40px;
+}
+
+footer {
+  background-color: cadetblue;
+}
