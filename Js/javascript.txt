@@ -1,0 +1,109 @@
+tipe data di javascript ada beberapa, yaitu :
+- number
+- string 
+- boolean
+- object 
+- function
+- undefined
+
+->number terdiri dari angka, angka minus, dan desimal -(pengoprasian pada console di chrome)-
+-akurasi hanya sampai 15 digit
+-koma pada desimal disimbolkan dengan titik 
+-penjumlahan pada desimal kurang akurat ,contoh :
+0.3 + 0.7 = 1 
+0.2 + 0.1 = 0.30000000000000004
+-bisa digunakan untuk bilangan eksponen
+123e5 = 12300000
+123e-5 = 0.00123
+-bisa digunakan untuk bilangan negatif
+-jangan pernah mengawali angka dengan angka 0
+-javascript memiliki angka special yaitu : infinity, -infinity, dan NaN(not a number) , contoh : 
+2 / 0 > infinity
+-4 / 0 > -infinity
+0 / 0 > NaN
+12 / "hello world" > NaN
+100 / "10" > 10 (DIPERHATIKAN!)
+
+
+
+
+->string berisi huruf dan angka yang dapat menampung sebanyak 255 char
+
+->operator sebuah simbol untuk meakukan operasi
+-ada beberapa operator, diantaranya :
+aritmatka binary (sebuah operator yang membutuhkan 2 operand):
+ >aritmatka
+ >penugasan
+ >perbandingan 
+ >logika
+ >string
+aritmatka ternary (sebuah operator yang membutuhkan 3 operand): 
+ >kondisional
+aritmatka unary (sebuah operator yang membutuhkan 1 operand):
+ >typeof
+
+
+-operator aritmatka (kukabataku) [urutan pengoprasian bilangan]--> kurung, kali, bagi, tambah, kuranng
+-memiliki beberapa operator ( +, -, *, /, %) % --> digunakan untuk menghitung sisa setelah bagi, contoh :
+10 % 3 > 1
+1 + 2 * 3 - 4 > 3
+(1 + 2) * 3 - 4 > 5 -->menggunakan urutan pengoprasian aritmatka kukabataku
+
+-operator penugasan/assignment (pengoprasian pada console di dalam chrome)
+-pada javascript untuk membuat variabel adalah mengunakan --> var, let, dan const
+var x > undefined
+x = 10 > 10
+-jika variabel x ditindih dengan isi variabel baru, maka value nya akan tergantikan dengan yang baru, misal :
+var x = 10 > 10
+x = 200 > 200
+-adapun simbol lanjutan yaitu 
++= --> artinya menambahkan var yang sudah diisi, lalu ditambakan dengan value baru || x += y >> x= x+y
+-= --> artinya mengurangi var yang sudah diisi, lalu dikurangi dengan value baru || x -= y >> x= x-y
+/= --> artinya membagi var yang sudah diisi, lalu dibagi dengan value baru || x /= y >> x= x/y
+*= --> artinya mengalikan var yang sudah diisi, lalu dikalikan dengan value baru || x *= y >> x= x*y
+%= --> artinya memodulus var yang sudah diisi, lalu dimodulus dengan value baru || x %= y >> x= x%y
+
+-operator perbandingan/comparison 
+-library nya adalah sebagai berikut :
+ - ==  --> sama dengan
+ - !=  --> tidak sama dengan
+ - ===  --> strict sama dengan (strict adalah operator identitas)
+ - !==  --> strict tidak sama dengan
+ - >  --> lebih besar dari
+ - <  --> lebih kecil dari
+ - >=  --> lebih besar sama dengan
+ - <=  --> lebih kecil sama dengan
+
+-dari library diatas menghasilkan boolean(true / false)
+
+10 == "10" > true
+10 != "1" > true
+10 === "10" > false
+10 !== "10" > true
+
+-operator logika/logical ada bebrapa simbol :
+&& --> "AND" 
+|| --> "OR" 
+! --> "NOT" 
+
+-konsep singkatnya :
+true && false > false
+true && true > true
+true || false > true
+!(true) > false
+
+-operator string (bisa menggunakan "" atau '')
+-konsep singkatnya jika number + string maka hasilnya akan string, contoh :
+10 + "10" > "1010"
+10 + 1- + "10" > "2010"
+"10" + 10 > "1010"
+"10" + 10 + 10 > "101010"
+
+-operator typeof, contoh :
+typeof(true) > boolean
+typeof(10) > number
+typeof("apel") > string
+
+-operator kondisional, contoh :
+(kondisi) ? "benar" : "salah" > "benar" / "salah"
+(x % 2==0) ? "true" : "false" > "true" / "false"
