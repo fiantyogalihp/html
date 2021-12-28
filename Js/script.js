@@ -20,10 +20,10 @@ angkotBeroperasi = 6;
 noAngkot = 1;
 
 while (noAngkot <= angkotBeroperasi) {
-  console.log('Angkot no. ' + noAngkot + 'beroperasi dengan baik');
+  console.log('Angkot no. ' + noAngkot + ' beroperasi dengan baik');
   noAngkot++;
 }
 
 for (let noAngkot = 7; noAngkot <= 10; noAngkot++) {
-  console.log('Angkot no. ' + noAngkot + 'tidak beroperasi')
+  console.log('Angkot no. ' + noAngkot + ' tidak beroperasi')
 }
