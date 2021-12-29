@@ -65,12 +65,15 @@
 
       <p>Pesan (Wajib Diisi)</p>
       <!-- Tambahkan tag <textarea> -->
-      <textarea name="pesan dan kesan" style="border: 2px solid #26d0c9;" required></textarea>
+      <textarea onkeyup="document.getElementById('lengthChar').innerText = this.value.length" required
+        name="pesan dan kesan" style="border: 2px solid #26d0c9;"></textarea>
+      <p>panjang :<span id="lengthChar">0</span> karakter</p>
 
       <p>*Bidang Wajib Diisi</p>
       <!-- Tambahkan tag <input> -->
       <input type="text" style="border: 2px solid #26d0c9;" style="padding-bottom: 2px;" required><br>
-      <input class="contact-submit" type="submit" value="kirim">
+      <input class="contact-submit" type="submit" value="kirim"><br>
+      <button onclick="javascript:alert('Yeyy!');">Pencet ini!</button>
     </div>
   </div>
 
@@ -79,9 +82,7 @@
     <div class="footer-list">
       <ul>
         <li>Tentang</li>
-        <a style="text-decoration: underline;" onclick="javascript:alert('Yeyy!');">
-          <li>Karier</li>
-        </a>
+        <li>Karier</li>
         <li>Hubungi Kami</li>
       </ul>
     </div>
