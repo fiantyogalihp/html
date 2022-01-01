@@ -18,10 +18,9 @@ if (lanjutan === true) {
 
 var jmlAngkot = 10;
 angkotBeroperasi = 6;
-noAngkot = 1;
 
 // penggunaan perulangan dengan iterasi IF ELSE
-for (let noAngkot = 1; noAngkot <= 10; noAngkot++) {
+for (var noAngkot = 1; noAngkot <= jmlAngkot; noAngkot++) {
   if (noAngkot <= 6) {
     console.log('Angkot no. ' + noAngkot + ' beroperasi dengan baik');
   } else {
