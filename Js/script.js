@@ -35,8 +35,8 @@ console.log('penggunaan switch \n');
 // penggunaan switch pada js 
 var makanan = prompt('silahkan memasukan makanan anda :\n menu : hamburger, nasi, telur, susu, pizza');
 // prompt adalah ekspresi, yang disimpan dalam variable agar bisa digunakan berkali-kali
-switch (makanan) { 
-// parameter switch adalah ekspresi bukan kondisi, ekspresi pada dasarnya menggasilkan sebuah nilai(value) 
+switch (makanan) {
+  // parameter switch adalah ekspresi bukan kondisi, ekspresi pada dasarnya menggasilkan sebuah nilai(value) 
   case 'nasi':
   case 'susu':
   case 'telur':
@@ -47,7 +47,7 @@ switch (makanan) {
   case 'pizza':
   case 'hamburger':
     alert('makanan TIDAK SEHAT!')
-    break; 
+    break;
   // dua case diatas adalah ringkasan dari satu case yang berisi output jika menghasilkan nilai tersebut
   // ex :
   // case pizza:
@@ -61,3 +61,15 @@ switch (makanan) {
     alert('makanan tidak ada dalam daftar!')
     break;
 }
+
+
+console.log('\npengkodisian for iterasi ');
+
+var s = '';
+for (var b = 0; b <= 10; b++) {
+  for (var j = 0; j < b; j++) {
+    s += 'x'
+  }
+  s += '\n';
+}
+console.log(s); 
