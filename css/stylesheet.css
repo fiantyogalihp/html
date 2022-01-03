@@ -75,6 +75,8 @@ a {
 
 .contact-form {
   padding-top: 100px;
+  margin: auto;
+  resize: both;
 }
 
 input, textarea {
