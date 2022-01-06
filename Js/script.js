@@ -62,6 +62,22 @@ switch (makanan) {
     break;
 }
 
+var y = 5;
+while (x < 5) {
+  console.log('hello world');
+  x++;
+}
+
+do {
+  console.log('hellow world');
+  x++;
+} while (x < 5);
+//perbedaan while dan d while adalah 
+// jika while, akan melakukan eksekusi terlebih dahulu ,setelah itu melakukan perulangan
+// jika do while, akan melakukan perulangan terlebih dahulu, setelah itu melakukan eksekusi
+// perbedaan paling mencolok antara keduanya adalah jika suatu variable dalam while pada peng-eksekusian pertama false maka, tidak ada perulangan yang akan muncul
+// beda dengan do while, jika suatu variable dalam do while pada peng-eksekusian pertama false, maka akan tetap dilanjutkan setelah itu menampilkan keadaan false
+
 
 console.log('\npengkodisian for iterasi ');
 
